@@ -9,7 +9,7 @@
     --color-grey: #616161;
     --color-light-grey: #7d7979;
     --color-blue: #73aace;
-    --color-dark-blue: #485064;
+    --color-dark-blue: #1e4572;
     --color-green: #a1d7be;
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
@@ -128,4 +128,26 @@ h1 {
   
   .navbar__menu__item:hover {
     background-color: var(--color-dark-blue);
+  }
+
+  /* Home */
+  #home {
+      background: url("imgs/background.png")
+      center/cover
+      no-repeat;
+      padding: 40px;
+      padding-top: 120px;
+      text-align: center;
+  }
+
+  .home__profile {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 2px solid var(--color-light-white);
+  }
+
+  .home__tilte,
+  .home__description {
+      color: var(--color-white);
   }
