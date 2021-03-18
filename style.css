@@ -151,3 +151,30 @@ h1 {
   .home__description {
       color: var(--color-white);
   }
+
+  /* Section */
+  .section {
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .section__container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .container {
+    display: flex;
+    margin: 80px 0;
+    align-items: flex-start;
+  }
+
+  .title {
+      width: 30%;
+  }
+
+  .content {
+      width: 70%;
+      text-align: left;
+  }
