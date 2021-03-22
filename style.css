@@ -8,7 +8,8 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7d7979;
-  --color-blue: #73aace;
+  --color-light-blue: #73aace;
+  --color-blue: #2d8dd6;
   --color-dark-blue: #1e4572;
   --color-green: #a1d7be;
   --color-yellow: #fff7d1;
@@ -131,6 +132,15 @@ p {
   background-color: var(--color-dark-blue);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /* Home */
 #home {
   background: url("imgs/background.png") center/cover no-repeat;
@@ -193,7 +203,7 @@ p {
 
 .skill__value {
   height: 30px;
-  background-color: var(--color-blue);
+  background-color: var(--color-light-blue);
   border-radius: 30px;
 }
 
@@ -278,7 +288,7 @@ p {
   display: inline-block;
   text-align: center;
   flex-direction: row;
-  background-color: var(--color-blue);
+  background-color: var(--color-light-blue);
   color: var(--color-white);
   width: 50px;
   height: 40px;
@@ -320,7 +330,7 @@ p {
 
 #faq .content .faq__list {
   width: 100%;
-  border-top: 3px solid var(--color-blue);
+  border-top: 3px solid var(--color-light-blue);
 }
 
 .faq__list__item .question {
@@ -341,7 +351,7 @@ p {
 }
 
 .faq__list__item.on .question {
-  color: var(--color-blue);
+  color: var(--color-light-blue);
   font-weight: var(--weight-semi-bold);
   letter-spacing: -0.1px;
   background-image: url(imgs/upicon.png);
