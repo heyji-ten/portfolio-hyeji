@@ -392,3 +392,16 @@ p {
   font-size: var(--font-medium);
   padding-right: 20px;
 }
+
+/* Footer */
+footer {
+  background-color: var(--color-dark-grey);
+}
+
+footer .section {
+  padding: 30px 50px 30px 50px;
+}
+
+.copyrights {
+  color: var(--color-white);
+}
