@@ -99,6 +99,21 @@ window.addEventListener('wheel', () => {
     selectNavItem(navItems[selectedNavIndex]);
 });
 
+//Show "arrow up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > homeHeight / 2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+}
+});
+
+//Handle click on te "arrow up" button
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
+
 // Click on the question to make the answer come out
 
 // const toggleFaq = document.querySelector('.faq__list__item');
