@@ -212,6 +212,10 @@ p {
   background-color: var(--color-yellow);
 }
 
+.portfolio__container {
+  padding: 100px;
+}
+
 .portfolio__categories {
   margin: 40px;
 }
@@ -434,6 +438,12 @@ footer .section {
   top: 16px;
   right: 16px;
   font-size: var(--font-medium);
+}
+
+#navbar {
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--color-blue);
 }
 
 #navbar.navbar--dark {
