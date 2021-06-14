@@ -125,11 +125,12 @@ p {
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--color-white);
+  border-color: var(--color-white);
 }
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-blue);
+  border-color: var(--color-white);
 }
 
 .navbar__toggle-btn {
@@ -239,11 +240,11 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   opacity: 1;
-  transition: all var(--animation-duration) ease-out;
+  transition: all var(--animation-duration) ease-in;
 }
 
-.portfolio__project .anim-out {
-  opacity: 0;
+.portfolio__project.anim-out {
+  opacity: 0.6;
   transform: scale(0.96) translateY(40px);
 }
 
@@ -262,8 +263,9 @@ p {
 }
 
 .project__img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
 }
 
 .project__description {
@@ -484,8 +486,7 @@ footer .section {
 
 /* Section */
 .section {
-  padding: 50px;
-  padding-top: 50px;
+  padding: 16px;
 }
 
 .container {
@@ -528,4 +529,8 @@ footer .section {
   line-height: 50px;
   right: 16px;
   bottom: 16px;
+}
+
+.category__btn {
+  padding: 8px 30px;
 }

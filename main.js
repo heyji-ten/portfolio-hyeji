@@ -25,6 +25,7 @@ navbarMenu.addEventListener('click', event => {
     scrollIntoView(link);
 });
 
+
 //Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
@@ -114,14 +115,39 @@ arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
 });
 
+//Projects
+const PortfolioBtnContainer = document.querySelector('.portfolio__categories');
+const projectContainer = document.querySelector('.portfolio__project');
+const projects = document.querySelectorAll('.project');
+
+PortfolioBtnContainer.addEventListener('click', (e) =>{
+    const filter = e.target.dataset.filter;
+    if(filter == null) {
+        return;
+    }
+
+    //Remove selection from the previous item and select the new
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    e.target.classList.add('selected');
+
+    projectContainer.classList.add('anim-out');
+
+    setTimeout(() => {
+        projects.forEach((project) => {
+            if(filter === '*' || filter === project.dataset.type) {
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    }, 300);
+});
+
 // Click on the question to make the answer come out
 
-// const toggleFaq = document.querySelector('.faq__list__item');
-// toggleFaq.addEventListener('click',() => {
-//     toggleFaq.classList.toggle('on');
-// });
-
-var toggleClick = document.querySelectorAll('.faq__list__item'); 
-for (var i = 0; i < toggleClick.length; i++){
-        toggleClick[i].classList.toggle('on'); 
-}
+const toggleFaq = document.querySelector('.faq__list__item');
+toggleFaq.addEventListener('click',() => {
+    toggleFaq.classList.toggle('on');
+});
