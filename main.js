@@ -147,7 +147,10 @@ PortfolioBtnContainer.addEventListener('click', (e) =>{
 
 // Click on the question to make the answer come out
 
-const toggleFaq = document.querySelector('.faq__list__item');
-toggleFaq.addEventListener('click',() => {
-    toggleFaq.classList.toggle('on');
-});
+const toggleFaq = document.querySelectorAll('.faq__list__item');
+
+for (const answer of toggleFaq) {
+    answer.addEventListener('click', () => {
+        answer.classList.toggle('on');
+    });
+};
